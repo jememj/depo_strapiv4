@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_posts",
+  "info": {
+    "singularName": "main-post",
+    "pluralName": "main-posts",
+    "displayName": "MainPost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    }
+  }
+}

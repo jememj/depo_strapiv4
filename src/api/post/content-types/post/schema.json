@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "art",
+        "media",
+        "prof",
+        "coach"
+      ]
+    },
+    "rubric": {
+      "type": "enumeration",
+      "enum": [
+        "deporec",
+        "copyright",
+        "talk",
+        "clearly"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "isMainPost": {
+      "type": "boolean"
+    }
+  }
+}
