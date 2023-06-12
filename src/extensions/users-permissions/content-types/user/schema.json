@@ -68,8 +68,15 @@
     },
     "favoritesPosts": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post.post"
+      "relation": "manyToMany",
+      "target": "api::post.post",
+      "inversedBy": "users"
+    },
+    "likes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::post.post",
+      "inversedBy": "userLikes"
     }
   }
 }

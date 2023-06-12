@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-post",
     "pluralName": "main-posts",
-    "displayName": "MainPost"
+    "displayName": "MainPost",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::post.post"
+    },
+    "extraDescription": {
+      "type": "text"
     }
   }
 }
